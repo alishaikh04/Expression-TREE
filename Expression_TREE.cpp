@@ -54,11 +54,7 @@ ETNode* insertData (ETNode* current, char data)
     ETNode* temp = new ETNode();    
     temp->data = data;
     temp->left = NULL;
-    temp->right = NULL;
-    if (current == NULL)
-    {
-        current = temp;
-    }
+    temp->right = NULL;
     return temp;
     }
      if (isOperator(data) && isOperator(current->data))
